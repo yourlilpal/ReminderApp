@@ -51,7 +51,21 @@ let remindersController = {
   // Delete the Reminder
   delete: (req, res) => {
     // ⭐️ your implementation here ⭐️
+    
+    // prints params id
+    delid = req.params.id
+    console.log(delid)
+
+    // database.cindy.reminders.delete(delid)
+    // database.cindy.delete(delid)
+
+    // currently only deletes first reminder
+    delete database.cindy.reminders[delid - 1]
+    
+    // redirect to main page.
+    res.redirect('/reminders');
   }
+
 }
 
 module.exports = remindersController;
