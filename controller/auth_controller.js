@@ -15,7 +15,14 @@ let authController = {
   },
 
   register: (req, res) => {
+    console.log(req.query)
+    // let userEmail = req.query.email;
+    res.render('auth/register', {
+      UE: req.query.email
+    });
+    
     res.render('auth/register')
+
   },
 
 
