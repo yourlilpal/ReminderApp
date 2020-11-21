@@ -12,6 +12,8 @@ let authController = {
       UE: req.query.email
     });
     
+    res.render('auth/register')
+
   },
 
   loginSubmit: (req, res) => {
