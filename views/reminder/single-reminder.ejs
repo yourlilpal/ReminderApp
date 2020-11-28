@@ -8,9 +8,9 @@
         <h4><%= reminderItem.description %></h4>
         <h4>Completed:
           <% if (reminderItem.completed == true) { %>
-            <span class="label label-success">True</span>
+            <span class="badge badge-success">True</span>
           <% } else if (reminderItem.completed == false) { %>
-            <span class="label label-danger">False</span>
+            <span class="badge badge-danger">False</span>
           <% } %>
         </h4>
 
@@ -22,5 +22,4 @@
 
       </li>
     </ul>
-
 </div>
