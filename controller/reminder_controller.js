@@ -1,14 +1,19 @@
+const { cindy } = require("../database");
 let database = require("../database");
 
 let remindersController = {
-  list: (req, res) => {
-    res.render('reminder/index', { reminders: database.cindy.reminders })
+  list: (req, res) => {;
+    res.render('reminder/index', { reminder: database.cindy.reminders, friend: database.cindy.friendlist,database: database})
   },
 
   new: (req, res) => {
     res.render('reminder/create')
   },
 
+  friendlist: (req,res) => {
+    res.render('friends/friendlist')
+  },
+  
   listOne: (req, res) => {
     let reminderToFind = req.params.id;
     let searchResult = database.cindy.reminders.find(function (reminder) {
@@ -17,7 +22,7 @@ let remindersController = {
     if (searchResult != undefined) {
       res.render('reminder/single-reminder', { reminderItem: searchResult })
     } else {
-      res.render('reminder/index', { reminders: database.cindy.reminders })
+      res.render('reminder/index', { reminder: database.cindy.reminders, friend: database.cindy.friendlist,database: database})
     }
   },
 
@@ -62,5 +67,7 @@ let remindersController = {
     res.redirect('/reminders');
   }
 }
+
+
 
 module.exports = remindersController;

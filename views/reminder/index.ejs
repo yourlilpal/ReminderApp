@@ -2,7 +2,7 @@
   <h1 class="page-header">Reminders</h1>
 
 <ul class="list-group">
-  <% reminders.forEach(function (reminderItem) { %>
+  <% reminder.forEach(function (reminderItem) { %>
     <li class="list-group-item">
       <strong><%= reminderItem.title %>: </strong>
       <%= reminderItem.description %>
@@ -13,6 +13,24 @@
         <span class="badge badge-danger">False</span>
       <% } %>
       <a class="pull-right" href=<%= "/reminder/" + reminderItem.id %>>View</a>
+    </li>
+  <% }) %>
+</ul>
+<ul>
+  <% friend.forEach(function (friendItem) {
+    name = friendItem.user
+    console.log(database)
+    friendData = database.name.reminders %>
+    <li class="list-group-item">
+      <%= friendData.description %>
+      || Completed:
+      <% if (friendItem.completed == true) { %>
+        <span class="badge badge-success">True</span>
+      <% } else if (friendItem.completed == false) { %>
+        <span class="badge badge-danger">False</span>
+      <% } %>
+      <button type="button" class="btn btn-primary">Normal</button>
+      <a class="pull-right" href=<%= "/reminder/" + friendItem.id %>>View</a>
     </li>
   <% }) %>
 </ul>
