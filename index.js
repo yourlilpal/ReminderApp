@@ -31,6 +31,7 @@ app.post("/reminder/update/:id", reminderController.update)
 
 app.post("/reminder/delete/:id", reminderController.delete)
 
+app.get("/weather", reminderController.getWeather)
 
 app.get("/register", authController.register);
 app.get("/login", authController.login);
