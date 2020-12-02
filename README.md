@@ -1,13 +1,5 @@
 # reminderapp
 Web Dev
-Sprint 5:
-In this Sprint, you should be wrapping things up with your application. This includes:
-Having a readme that states who your group members are, and a basic explanation of how your code is structured.
-If there were any tasks you could NOT complete from the above sprints, put them in the readme, and give a short explanation of how you would attempt to do the task if you had time.
-Add a license to your github repository. The license specifies how your code may be used by others.
-Make sure your github repository is fully up-to-date. Provide installation instructions in your readme. (Ex - git clone <url>....cd <folderName> run npm install.... node index.js etc)
-Readme.md
-need to finish by end of class
 
 ReadMe
 
@@ -47,12 +39,15 @@ Permission is hereby granted, free of change, to any person obtaining a copy of 
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM. DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALING IN THE SOFTWARE
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM. DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALING IN THE SOFTWARE.
 
 Installation Instructions
 
 Click on Code
 Click on Open with GitHub Desktop
 Copy and Paste url: https://github.com/yourlilpal/reminderapp.git
+Install npm install
 Install Express using npm install Express in code editor
+Install Cookie Session using npm install cookie-session in code editor
+Install Express layout using npm install express-ejs-layout in code editor
 Install node-fetch using npm install node-fetch in code editor
