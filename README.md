@@ -1,5 +1,12 @@
-# reminderapp
-Web Dev
+Sprint 5:
+In this Sprint, you should be wrapping things up with your application. This includes:
+Having a readme that states who your group members are, and a basic explanation of how your code is structured.
+If there were any tasks you could NOT complete from the above sprints, put them in the readme, and give a short explanation of how you would attempt to do the task if you had time.
+Add a license to your github repository. The license specifies how your code may be used by others.
+Make sure your github repository is fully up-to-date. Provide installation instructions in your readme. (Ex - git clone <url>....cd <folderName> run npm install.... node index.js etc)
+Readme.md 
+
+
 ReadMe
 
 Introduction
